@@ -1,0 +1,128 @@
+header { 
+
+ padding: 3em 1em 2em 1em;
+ text-align: center;
+ background-color: rgba(255,255,255,.5);
+ background-image: url(pumpkin.png);
+ background-repeat: repeat-x;
+ margin-top: 30px;
+}
+body{
+
+	background-color: #bcd4e6;
+	margin: 0 10%;
+	font-family: sans-serif;
+	background-image: url(autumn.png);
+	background-repeat: repeat-y;
+}
+h1{
+	
+	text-align: center;
+	font-family: "Raleway", Georgia, serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	border-top: 1px solid #009494;
+	border-bottom: 1px solid #009494;
+
+}
+h2{
+	text-align: left;
+	font-family: "Open Sans", Georgia, serif;
+	font-weight: 100;
+	font-size: medium;
+
+	
+}
+h3{
+	text-align: left;
+	font-family: "Quicksand", Georgia, serif;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+h4{
+	text-align: left;
+	font-family: serif;
+	color: #5b2815;
+	font-size: 1em;
+  }
+  #info {
+	  color: teal;
+  }
+  #info p { 
+     font-style: italic; 
+  }
+
+aside{ width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color:#b0c4de;
+}
+
+
+nav, footer {
+  font-family: verdana, sans-serif;
+  background-color: #6495ed;
+}
+nav ul { 
+ margin: 0; 
+ padding: 0; 
+ list-style-type: none; 
+}
+nav ul li a:link, nav ul li a:visited {
+  color: #0000ff;
+}
+nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+  color: #311432;
+}
+nav ul{
+	display: flex;
+	justify-content: center;
+}
+
+nav ul li a{
+	display: block;
+	border: 1px solid;
+	border-radius:.5em;
+	padding:.5em 1em;
+	margin: .5em;
+}
+nav ul li {
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+@media screen and (max-width: 1300px) {
+.column{
+	width:100%;
+	}
+}
+
+
+<?php
+
+if($_POST["message"]) {
+
+mail("hc9159@wayne.edu", "Here is the subject line",
+
+$_POST["Welcome to My Moroccan Spa"]. "From: hc9159@wayne.edu");
+
+}
+
+?>
+
+
+
+
